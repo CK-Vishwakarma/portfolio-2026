@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { projects } from "../data/projects";
-import { ProjectCard } from "./ProjectCard";
+import { useState } from 'react';
+import { projects } from '../data/projects';
+import { ProjectCard } from './ProjectCard';
 
 export function Projects() {
-  const [filter, setFilter] = useState<string>("all");
+  const [filter, setFilter] = useState<string>('all');
 
   // Get unique technologies for filtering
   const allTechnologies = Array.from(
@@ -13,9 +13,10 @@ export function Projects() {
   ).sort();
 
   // Filter projects based on selected technology
-  const filteredProjects = filter === "all"
-    ? projects
-    : projects.filter(project => project.technologies.includes(filter));
+  const filteredProjects =
+    filter === 'all'
+      ? projects
+      : projects.filter(project => project.technologies.includes(filter));
 
   return (
     <section id="projects" className="relative py-20 px-6 overflow-hidden">
@@ -38,30 +39,31 @@ export function Projects() {
             Featured Projects
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            A showcase of innovative solutions built with modern technologies, delivering exceptional user experiences and business value.
+            A showcase of innovative solutions built with modern technologies,
+            delivering exceptional user experiences and business value.
           </p>
         </div>
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           <button
-            onClick={() => setFilter("all")}
+            onClick={() => setFilter('all')}
             className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-              filter === "all"
-                ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg"
-                : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700"
+              filter === 'all'
+                ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
+                : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
             }`}
           >
             All Projects
           </button>
-          {allTechnologies.slice(0, 6).map((tech) => (
+          {allTechnologies.slice(0, 6).map(tech => (
             <button
               key={tech}
               onClick={() => setFilter(tech)}
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 filter === tech
-                  ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg"
-                  : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700"
+                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
+                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
               }`}
             >
               {tech}
@@ -96,19 +98,27 @@ export function Projects() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-500 mb-2">1M+</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Users Served</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">
+                Users Served
+              </div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-purple-500 mb-2">94%</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">SEO Score</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">
+                SEO Score
+              </div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-green-500 mb-2">80%</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Performance Boost</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">
+                Performance Boost
+              </div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-orange-500 mb-2">10+</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Projects Delivered</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">
+                Projects Delivered
+              </div>
             </div>
           </div>
         </div>
@@ -116,9 +126,13 @@ export function Projects() {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Ready to Build Something Amazing?</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              Ready to Build Something Amazing?
+            </h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Let&apos;s collaborate on your next project. I bring expertise in modern web technologies and a proven track record of delivering high-impact solutions.
+              Let&apos;s collaborate on your next project. I bring expertise in
+              modern web technologies and a proven track record of delivering
+              high-impact solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

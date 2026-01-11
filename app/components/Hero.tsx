@@ -1,8 +1,11 @@
-import { personal } from "../data/personal";
+import { personal } from '../data/personal';
 
 export function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden"
+    >
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-black dark:to-gray-800">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.3),transparent_50%)] dark:bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.1),transparent_50%)]" />
@@ -53,7 +56,7 @@ export function Hero() {
             </a> */}
             <a
               href="#contact"
-              className="px-8 py-4 border-2 border-gray-300 dark:border-gray-600 rounded-full font-semibold text-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300"
+              className="px-8 py-4 border-2 border-gray-300 dark:border-gray-600 rounded-full font-semibold text-lg text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300"
             >
               Get In Touch
             </a>
