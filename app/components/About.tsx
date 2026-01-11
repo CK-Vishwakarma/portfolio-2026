@@ -177,10 +177,10 @@ export function About() {
         {/* Call to Action */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Let's Build Something Amazing Together</h3>
+            <h3 className="text-2xl font-bold mb-4">Let&apos;s Build Something Amazing Together</h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              I'm always excited to take on new challenges and collaborate on innovative projects.
-              Whether you have a project in mind or just want to connect, I'd love to hear from you.
+              I&apos;m always excited to take on new challenges and collaborate on innovative projects.
+              Whether you have a project in mind or just want to connect, I&apos;d love to hear from you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

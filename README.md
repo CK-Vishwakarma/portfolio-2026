@@ -23,6 +23,7 @@ My expertise extends across **AWS cloud**, **CI/CD automation**, **secure archit
 - Clean animations and structured sections (About, Skills, Projects, Experience)
 - Fully functional **contact form** using Resend API
 - **Performance monitoring** with Vercel Speed Insights
+- **Confidential project handling** - Enterprise projects shown with appropriate NDA indicators
 - Auto-deployments via **Vercel CI/CD** (GitHub integration)
 - Lighthouse-optimized performance scoring
 
