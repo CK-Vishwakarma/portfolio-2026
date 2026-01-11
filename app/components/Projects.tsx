@@ -118,7 +118,7 @@ export function Projects() {
           <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">Ready to Build Something Amazing?</h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Let's collaborate on your next project. I bring expertise in modern web technologies and a proven track record of delivering high-impact solutions.
+              Let&apos;s collaborate on your next project. I bring expertise in modern web technologies and a proven track record of delivering high-impact solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
