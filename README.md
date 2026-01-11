@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🌟 Chanchal Kumar Vishvakarma — Personal Portfolio
+### **Senior Fullstack Engineer | Tech Lead | Cloud & CI/CD Specialist**
 
-First, run the development server:
+📍 Mumbai, India  
+📞 +91-7000143933  
+📧 chanchalkvishvakarma@gmail.com  
+🔗 **LinkedIn:** https://www.linkedin.com/in/chanchal-kumar-vishvakarma-0954991ba/  
+🔗 **Live Portfolio:** https://chanchal-vishvakarma.vercel.app/
 
+---
+
+## 🧑‍💻 About Me
+I am a **Senior Fullstack Engineer (5.2+ YOE)** specializing in building high-performance frontend architecture using **React/Next.js** and scalable backend systems using **Node/NestJS**. I have delivered production systems for **finance, healthcare, AI, and SaaS** domains while leading engineering teams and owning system design end-to-end.
+
+My expertise extends across **AWS cloud**, **CI/CD automation**, **secure architectures**, and **performance optimization**. This portfolio showcases my skills, experience, and selected high-impact projects.
+
+---
+
+## ✨ Portfolio Features
+- Modern and responsive UI built with **Next.js**
+- SEO-optimized (metadata, open graph, performance tuning)
+- Clean animations and structured sections (About, Skills, Projects, Experience)
+- Fully functional **contact form** using Resend API
+- **Performance monitoring** with Vercel Speed Insights
+- Auto-deployments via **Vercel CI/CD** (GitHub integration)
+- Lighthouse-optimized performance scoring
+
+---
+
+## 🛠 Tech Stack Used
+**Frontend**
+- Next.js 16+  
+- React 19+ 
+- TypeScript  
+- TailwindCSS  
+- Framer Motion  
+
+**Backend / API**
+- Next.js Route Handlers (Serverless API)
+- Resend (email service)
+
+**Cloud / DevOps**
+- Vercel  
+- Vercel Speed Insights (performance monitoring)
+- GitHub Auto Deployment  
+
+**Tools**
+- ESLint / Prettier  
+- Git & Version Control  
+
+---
+
+## 🧩 Folder Structure
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+.
+├── app/
+│   ├── page.tsx
+│   ├── about/
+│   ├── skills/
+│   ├── projects/
+│   ├── experience/
+│   └── api/
+│       └── contact/route.ts
+├── components/
+├── public/
+├── styles/
+└── README.md
