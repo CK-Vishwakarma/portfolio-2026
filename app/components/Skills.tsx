@@ -1,59 +1,59 @@
 const skillCategories = [
   {
-    title: "Frontend",
-    icon: "💻",
+    title: 'Frontend',
+    icon: '💻',
     skills: [
-      { name: "React", icon: "⚛️" },
-      { name: "Next.js", icon: "▲" },
-      { name: "TypeScript", icon: "🔷" },
-      { name: "Redux Toolkit", icon: "🔄" },
-      { name: "Tailwind CSS", icon: "🎨" },
-      { name: "Material-UI", icon: "🎯" },
-      { name: "React Query", icon: "🔍" },
+      { name: 'React', icon: '⚛️' },
+      { name: 'Next.js', icon: '▲' },
+      { name: 'TypeScript', icon: '🔷' },
+      { name: 'Redux Toolkit', icon: '🔄' },
+      { name: 'Tailwind CSS', icon: '🎨' },
+      { name: 'Material-UI', icon: '🎯' },
+      { name: 'React Query', icon: '🔍' },
     ],
   },
   {
-    title: "Backend",
-    icon: "⚙️",
+    title: 'Backend',
+    icon: '⚙️',
     skills: [
-      { name: "Node.js", icon: "🟢" },
-      { name: "NestJS", icon: "🪺" },
-      { name: "Express", icon: "🚀" },
-      { name: "REST APIs", icon: "🔗" },
-      { name: "GraphQL", icon: "🔺" },
+      { name: 'Node.js', icon: '🟢' },
+      { name: 'NestJS', icon: '🪺' },
+      { name: 'Express', icon: '🚀' },
+      { name: 'REST APIs', icon: '🔗' },
+      { name: 'GraphQL', icon: '🔺' },
     ],
   },
   {
-    title: "Cloud & DevOps",
-    icon: "☁️",
+    title: 'Cloud & DevOps',
+    icon: '☁️',
     skills: [
-      { name: "AWS", icon: "🅰️" },
-      { name: "Docker", icon: "🐳" },
-      { name: "Jenkins", icon: "🔧" },
-      { name: "GitHub Actions", icon: "⚡" },
-      { name: "CI/CD", icon: "🔄" },
+      { name: 'AWS', icon: '🅰️' },
+      { name: 'Docker', icon: '🐳' },
+      { name: 'Jenkins', icon: '🔧' },
+      { name: 'GitHub Actions', icon: '⚡' },
+      { name: 'CI/CD', icon: '🔄' },
     ],
   },
   {
-    title: "Database",
-    icon: "🗄️",
+    title: 'Database',
+    icon: '🗄️',
     skills: [
-      { name: "MongoDB", icon: "🍃" },
-      { name: "MySQL", icon: "🗃️" },
-      { name: "PostgreSQL", icon: "🐘" },
+      { name: 'MongoDB', icon: '🍃' },
+      { name: 'MySQL', icon: '🗃️' },
+      { name: 'PostgreSQL', icon: '🐘' },
     ],
   },
   {
-    title: "Tools & Technologies",
-    icon: "🛠️",
+    title: 'Tools & Technologies',
+    icon: '🛠️',
     skills: [
-      { name: "WebSockets", icon: "🔌" },
-      { name: "Socket.IO", icon: "📡" },
-      { name: "PWA", icon: "📱" },
-      { name: "Security", icon: "🔒" },
-      { name: "Stripe", icon: "💳" },
-      { name: "Razorpay", icon: "💰" },
-      { name: "Git", icon: "📚" },
+      { name: 'WebSockets', icon: '🔌' },
+      { name: 'Socket.IO', icon: '📡' },
+      { name: 'PWA', icon: '📱' },
+      { name: 'Security', icon: '🔒' },
+      { name: 'Stripe', icon: '💳' },
+      { name: 'Razorpay', icon: '💰' },
+      { name: 'Git', icon: '📚' },
     ],
   },
 ];
@@ -78,7 +78,8 @@ export function Skills() {
             Skills & Expertise
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Technologies and tools I use to build scalable, high-performance applications that deliver exceptional user experiences.
+            Technologies and tools I use to build scalable, high-performance
+            applications that deliver exceptional user experiences.
           </p>
         </div>
 
@@ -101,7 +102,9 @@ export function Skills() {
                   <div
                     key={skill.name}
                     className="flex items-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 transition-all duration-300 group cursor-pointer"
-                    style={{ animationDelay: `${(categoryIndex * 0.1) + (skillIndex * 0.05)}s` }}
+                    style={{
+                      animationDelay: `${categoryIndex * 0.1 + skillIndex * 0.05}s`,
+                    }}
                   >
                     <span className="text-lg mr-2 group-hover:scale-110 transition-transform duration-300">
                       {skill.icon}
@@ -123,15 +126,26 @@ export function Skills() {
               Want to know more about my experience?
             </h3>
             <p className="text-blue-100 mb-6 max-w-md mx-auto">
-              Download my detailed resume to see my complete professional journey, certifications, and project achievements.
+              Download my detailed resume to see my complete professional
+              journey, certifications, and project achievements.
             </p>
             <a
               href="/Chanchal_Kumar_Resume_fullstack_Jan.pdf"
               download="Chanchal_Kumar_Vishvakarma_Resume.pdf"
               className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
               </svg>
               Download Resume
             </a>

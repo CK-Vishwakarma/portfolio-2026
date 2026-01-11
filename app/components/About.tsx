@@ -1,4 +1,4 @@
-import { personal } from "../data/personal";
+import { personal } from '../data/personal';
 
 export function About() {
   return (
@@ -21,7 +21,8 @@ export function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Passionate about crafting exceptional digital experiences through innovative technology solutions
+            Passionate about crafting exceptional digital experiences through
+            innovative technology solutions
           </p>
         </div>
 
@@ -37,14 +38,20 @@ export function About() {
                 My Journey
               </h3>
               <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p>{personal.bio}</p>
                 <p>
-                  {personal.bio}
+                  My journey in software engineering has been driven by a
+                  relentless pursuit of excellence and innovation. With over 5
+                  years of hands-on experience, I&apos;ve evolved from a curious
+                  developer into a technical leader who bridges the gap between
+                  complex business requirements and elegant technical solutions.
                 </p>
                 <p>
-                  My journey in software engineering has been driven by a relentless pursuit of excellence and innovation. With over 5 years of hands-on experience, I&apos;ve evolved from a curious developer into a technical leader who bridges the gap between complex business requirements and elegant technical solutions.
-                </p>
-                <p>
-                  I believe in the power of technology to transform businesses and improve lives. Whether it&apos;s optimizing financial workflows for millions of users or creating intuitive healthcare platforms, I approach every challenge with meticulous attention to detail and a user-first mindset.
+                  I believe in the power of technology to transform businesses
+                  and improve lives. Whether it&apos;s optimizing financial
+                  workflows for millions of users or creating intuitive
+                  healthcare platforms, I approach every challenge with
+                  meticulous attention to detail and a user-first mindset.
                 </p>
               </div>
             </div>
@@ -83,19 +90,30 @@ export function About() {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600 dark:text-gray-300">Led a team of 5 engineers delivering digital KYC solutions for 1M+ users</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Led a team of 5 engineers delivering digital KYC solutions
+                    for 1M+ users
+                  </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600 dark:text-gray-300">Improved SEO scores from 72% to 94% and reduced load times by 70%</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Improved SEO scores from 72% to 94% and reduced load times
+                    by 70%
+                  </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600 dark:text-gray-300">Architected enterprise applications serving 500K+ combined users</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Architected enterprise applications serving 500K+ combined
+                    users
+                  </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600 dark:text-gray-300">Optimized CI/CD pipelines reducing deployment time by 80%</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Optimized CI/CD pipelines reducing deployment time by 80%
+                  </p>
                 </div>
               </div>
             </div>
@@ -114,25 +132,40 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Education */}
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Education</h4>
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                Education
+              </h4>
               <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6">
                 <div className="flex items-center mb-3">
                   <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
-                  <h5 className="font-semibold text-gray-900 dark:text-white">{personal.education.degree}</h5>
+                  <h5 className="font-semibold text-gray-900 dark:text-white">
+                    {personal.education.degree}
+                  </h5>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 ml-6">{personal.education.university}</p>
-                <p className="text-gray-600 dark:text-gray-300 ml-6">{personal.education.location}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400 ml-6 mt-2">Graduated: {personal.education.graduation}</p>
+                <p className="text-gray-600 dark:text-gray-300 ml-6">
+                  {personal.education.university}
+                </p>
+                <p className="text-gray-600 dark:text-gray-300 ml-6">
+                  {personal.education.location}
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 ml-6 mt-2">
+                  Graduated: {personal.education.graduation}
+                </p>
               </div>
 
               <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6">
                 <div className="flex items-center mb-3">
                   <div className="w-3 h-3 bg-purple-500 rounded-full mr-3"></div>
-                  <h5 className="font-semibold text-gray-900 dark:text-white">Certifications</h5>
+                  <h5 className="font-semibold text-gray-900 dark:text-white">
+                    Certifications
+                  </h5>
                 </div>
                 <ul className="space-y-2 ml-6">
                   {personal.certifications.map((cert, index) => (
-                    <li key={index} className="text-gray-600 dark:text-gray-300 flex items-center">
+                    <li
+                      key={index}
+                      className="text-gray-600 dark:text-gray-300 flex items-center"
+                    >
                       <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mr-3 flex-shrink-0"></span>
                       {cert}
                     </li>
@@ -143,14 +176,20 @@ export function About() {
 
             {/* Experience Highlights */}
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Experience Highlights</h4>
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                Experience Highlights
+              </h4>
 
               <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6">
                 <div className="flex items-center mb-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
-                  <h5 className="font-semibold text-gray-900 dark:text-white">Neosoft (2025 - Present)</h5>
+                  <h5 className="font-semibold text-gray-900 dark:text-white">
+                    Neosoft (2025 - Present)
+                  </h5>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 ml-6 mb-2">Senior Software Engineer</p>
+                <p className="text-gray-600 dark:text-gray-300 ml-6 mb-2">
+                  Senior Software Engineer
+                </p>
                 <ul className="space-y-1 ml-6 text-sm text-gray-600 dark:text-gray-300">
                   <li>• Digital KYC & Mutual Funds for 1M+ users</li>
                   <li>• SEO optimization: 72% → 94%</li>
@@ -161,9 +200,13 @@ export function About() {
               <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6">
                 <div className="flex items-center mb-3">
                   <div className="w-3 h-3 bg-orange-500 rounded-full mr-3"></div>
-                  <h5 className="font-semibold text-gray-900 dark:text-white">Tatvasoft (2021 - 2025)</h5>
+                  <h5 className="font-semibold text-gray-900 dark:text-white">
+                    Tatvasoft (2021 - 2025)
+                  </h5>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 ml-6 mb-2">Senior Software Engineer</p>
+                <p className="text-gray-600 dark:text-gray-300 ml-6 mb-2">
+                  Senior Software Engineer
+                </p>
                 <ul className="space-y-1 ml-6 text-sm text-gray-600 dark:text-gray-300">
                   <li>• 3+ enterprise applications</li>
                   <li>• 500K+ combined users</li>
@@ -177,10 +220,13 @@ export function About() {
         {/* Call to Action */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Let&apos;s Build Something Amazing Together</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              Let&apos;s Build Something Amazing Together
+            </h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              I&apos;m always excited to take on new challenges and collaborate on innovative projects.
-              Whether you have a project in mind or just want to connect, I&apos;d love to hear from you.
+              I&apos;m always excited to take on new challenges and collaborate
+              on innovative projects. Whether you have a project in mind or just
+              want to connect, I&apos;d love to hear from you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

@@ -28,7 +28,10 @@ function checkRateLimit(ip: string): boolean {
 const contactSchema = z.object({
   name: z.string().min(1, 'Name is required').max(100, 'Name is too long'),
   email: z.email('Invalid email address'),
-  message: z.string().min(10, 'Message must be at least 10 characters').max(1000, 'Message is too long'),
+  message: z
+    .string()
+    .min(10, 'Message must be at least 10 characters')
+    .max(1000, 'Message is too long'),
 });
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -36,9 +39,10 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request: NextRequest) {
   try {
     // Get client IP for rate limiting
-    const ip = request.headers.get('x-forwarded-for') ||
-               request.headers.get('x-real-ip') ||
-               'unknown';
+    const ip =
+      request.headers.get('x-forwarded-for') ||
+      request.headers.get('x-real-ip') ||
+      'unknown';
 
     // Check rate limit
     if (!checkRateLimit(ip)) {
@@ -56,7 +60,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           error: 'Validation failed',
-          details: validationResult.error.format()
+          details: validationResult.error.format(),
         },
         { status: 400 }
       );
@@ -98,7 +102,6 @@ export async function POST(request: NextRequest) {
       { message: 'Email sent successfully!', data },
       { status: 200 }
     );
-
   } catch (error) {
     console.error('Server error:', error);
     return NextResponse.json(

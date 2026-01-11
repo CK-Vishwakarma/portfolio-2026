@@ -1,5 +1,5 @@
-
 # 🌟 Chanchal Kumar Vishvakarma — Personal Portfolio
+
 ### **Senior Fullstack Engineer | Tech Lead | Cloud & CI/CD Specialist**
 
 📍 Mumbai, India  
@@ -11,6 +11,7 @@
 ---
 
 ## 🧑‍💻 About Me
+
 I am a **Senior Fullstack Engineer (5.2+ YOE)** specializing in building high-performance frontend architecture using **React/Next.js** and scalable backend systems using **Node/NestJS**. I have delivered production systems for **finance, healthcare, AI, and SaaS** domains while leading engineering teams and owning system design end-to-end.
 
 My expertise extends across **AWS cloud**, **CI/CD automation**, **secure architectures**, and **performance optimization**. This portfolio showcases my skills, experience, and selected high-impact projects.
@@ -18,6 +19,7 @@ My expertise extends across **AWS cloud**, **CI/CD automation**, **secure archit
 ---
 
 ## ✨ Portfolio Features
+
 - Modern and responsive UI built with **Next.js**
 - SEO-optimized (metadata, open graph, performance tuning)
 - Clean animations and structured sections (About, Skills, Projects, Experience)
@@ -30,29 +32,35 @@ My expertise extends across **AWS cloud**, **CI/CD automation**, **secure archit
 ---
 
 ## 🛠 Tech Stack Used
+
 **Frontend**
-- Next.js 16+  
-- React 19+ 
-- TypeScript  
-- TailwindCSS  
-- Framer Motion  
+
+- Next.js 16+
+- React 19+
+- TypeScript
+- TailwindCSS
+- Framer Motion
 
 **Backend / API**
+
 - Next.js Route Handlers (Serverless API)
 - Resend (email service)
 
 **Cloud / DevOps**
-- Vercel  
+
+- Vercel
 - Vercel Speed Insights (performance monitoring)
-- GitHub Auto Deployment  
+- GitHub Auto Deployment
 
 **Tools**
-- ESLint / Prettier  
-- Git & Version Control  
+
+- ESLint / Prettier
+- Git & Version Control
 
 ---
 
 ## 🧩 Folder Structure
+
 ```bash
 .
 ├── app/
@@ -67,3 +75,4 @@ My expertise extends across **AWS cloud**, **CI/CD automation**, **secure archit
 ├── public/
 ├── styles/
 └── README.md
+```
