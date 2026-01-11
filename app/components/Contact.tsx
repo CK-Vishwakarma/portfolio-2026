@@ -109,7 +109,7 @@ const handleCopyPhone = async () => {
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Contact Form */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-700">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl sm:p-8 p-6  shadow-xl border border-gray-200 dark:border-gray-700">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
               <span className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
                 📧
@@ -219,7 +219,7 @@ const handleCopyPhone = async () => {
           {/* Contact Information */}
           <div className="space-y-8">
             {/* Direct Contact */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-700">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl sm:p-8 p-6  shadow-xl border border-gray-200 dark:border-gray-700">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
                 <span className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center mr-3">
                   📞
@@ -317,7 +317,7 @@ const handleCopyPhone = async () => {
             </div>
 
             {/* Social Links */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-700">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl sm:p-8 p-6  shadow-xl border border-gray-200 dark:border-gray-700">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
                 <span className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center mr-3">
                   🌐
