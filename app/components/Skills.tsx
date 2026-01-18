@@ -142,7 +142,7 @@ export function Skills() {
               journey, certifications, and project achievements.
             </p>
             <a
-              href="/Chanchal_Kumar_Resume_fullstack_Jan.pdf"
+              href="/fullstack_Chanchal_Kumar_Resume.pdf"
               download="Chanchal_Kumar_Vishvakarma_Resume.pdf"
               className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
