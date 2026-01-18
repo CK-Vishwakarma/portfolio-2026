@@ -1,35 +1,37 @@
+import Image from 'next/image';
+
 const skillCategories = [
   {
     title: 'Frontend',
     icon: '💻',
     skills: [
-      { name: 'React', icon: '⚛️' },
-      { name: 'Next.js', icon: '▲' },
-      { name: 'TypeScript', icon: '🔷' },
-      { name: 'Redux Toolkit', icon: '🔄' },
-      { name: 'Tailwind CSS', icon: '🎨' },
-      { name: 'Material-UI', icon: '🎯' },
-      { name: 'React Query', icon: '🔍' },
+      { name: 'React', icon: '/assets/react.svg' },
+      { name: 'Next.js', icon: '/assets/next.svg' },
+      { name: 'TypeScript', icon: '/assets/typescript.svg' },
+      { name: 'Redux Toolkit', icon: '/assets/redux.svg' },
+      { name: 'Tailwind CSS', icon: '/assets/tailwind.svg' },
+      { name: 'Material-UI', icon: '/assets/mui.svg' },
+      { name: 'React Query', icon: '/assets/reactQuery.svg' },
     ],
   },
   {
     title: 'Backend',
     icon: '⚙️',
     skills: [
-      { name: 'Node.js', icon: '🟢' },
-      { name: 'NestJS', icon: '🪺' },
-      { name: 'Express', icon: '🚀' },
-      { name: 'REST APIs', icon: '🔗' },
-      { name: 'GraphQL', icon: '🔺' },
+      { name: 'Node.js', icon: '/assets/node.svg' },
+      { name: 'NestJS', icon: '/assets/nestjs.svg' },
+      { name: 'Express', icon: '/assets/express.svg' },
+      { name: 'REST APIs', icon: '/assets/rest-api.svg' },
+      { name: 'GraphQL', icon: '/assets/graphql.svg' },
     ],
   },
   {
     title: 'Cloud & DevOps',
     icon: '☁️',
     skills: [
-      { name: 'AWS', icon: '🅰️' },
-      { name: 'Docker', icon: '🐳' },
-      { name: 'Jenkins', icon: '🔧' },
+      { name: 'AWS', icon: '/assets/aws.svg' },
+      { name: 'Docker', icon: '/assets/docker.svg' },
+      { name: 'Jenkins', icon: '/assets/jenkins.svg' },
       { name: 'GitHub Actions', icon: '⚡' },
       { name: 'CI/CD', icon: '🔄' },
     ],
@@ -38,9 +40,9 @@ const skillCategories = [
     title: 'Database',
     icon: '🗄️',
     skills: [
-      { name: 'MongoDB', icon: '🍃' },
-      { name: 'MySQL', icon: '🗃️' },
-      { name: 'PostgreSQL', icon: '🐘' },
+      { name: 'MongoDB', icon: '/assets/mongodb.svg' },
+      { name: 'MySQL', icon: '/assets/mySql.svg' },
+      { name: 'PostgreSQL', icon: '/assets/postgres.svg' },
     ],
   },
   {
@@ -51,9 +53,9 @@ const skillCategories = [
       { name: 'Socket.IO', icon: '📡' },
       { name: 'PWA', icon: '📱' },
       { name: 'Security', icon: '🔒' },
-      { name: 'Stripe', icon: '💳' },
-      { name: 'Razorpay', icon: '💰' },
-      { name: 'Git', icon: '📚' },
+      { name: 'Stripe', icon: '/assets/stripe.png' },
+      { name: 'Razorpay', icon: '/assets/razorpay.png' },
+      { name: 'Git', icon: '/assets/git.svg' },
     ],
   },
 ];
@@ -106,9 +108,19 @@ export function Skills() {
                       animationDelay: `${categoryIndex * 0.1 + skillIndex * 0.05}s`,
                     }}
                   >
-                    <span className="text-lg mr-2 group-hover:scale-110 transition-transform duration-300">
-                      {skill.icon}
-                    </span>
+                    {skill.icon.startsWith('/assets/') ? (
+                      <Image
+                        src={skill.icon}
+                        alt={skill.name}
+                        width={24}
+                        height={24}
+                        className="w-6 h-6 mr-2 group-hover:scale-110 transition-transform duration-300"
+                      />
+                    ) : (
+                      <span className="text-lg mr-2 group-hover:scale-110 transition-transform duration-300">
+                        {skill.icon}
+                      </span>
+                    )}
                     <span className="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
                       {skill.name}
                     </span>

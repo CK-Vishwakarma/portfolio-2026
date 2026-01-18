@@ -142,7 +142,7 @@ export function Projects() {
                 Start a Project
               </a>
               <a
-                href="https://github.com/chanchalkumarv"
+                href="https://github.com/CK-Vishwakarma"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-600 transition-all duration-300"

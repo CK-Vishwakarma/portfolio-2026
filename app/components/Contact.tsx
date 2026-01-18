@@ -322,7 +322,7 @@ export function Contact() {
                       <p className="font-medium text-gray-900 dark:text-white">
                         Email
                       </p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 w-32 truncate">
+                      <p className="text-sm text-gray-600 dark:text-gray-400 sm:w-full w-32 truncate">
                         {personal.email}
                       </p>
                     </div>

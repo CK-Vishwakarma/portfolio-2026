@@ -4,6 +4,7 @@ export interface Project {
   description: string;
   image: string;
   technologies: string[];
+  category: string;
   githubUrl?: string;
   liveUrl?: string;
   featured: boolean;
@@ -36,6 +37,7 @@ export const projects: Project[] = [
       'OAuth2',
       'Python',
     ],
+    category: 'Healthcare',
     featured: true,
     confidential: true,
     comingSoon: true,
@@ -64,6 +66,7 @@ export const projects: Project[] = [
       'SEO',
       'CI/CD',
     ],
+    category: 'Finance',
     featured: true,
     confidential: true,
     githubDescription: 'Enterprise BFSI product — repository cannot be shared.',
@@ -91,9 +94,12 @@ export const projects: Project[] = [
       'CI/CD',
       'Mobile',
     ],
-    githubUrl: 'https://github.com/chanchalkumarv/smart-color-styler',
-    liveUrl: 'https://smart-color-styler.vercel.app',
+    category: 'AI/ML',
     featured: true,
+    confidential: true,
+    githubDescription: 'Enterprise BFSI product — repository cannot be shared.',
+    liveDescription:
+      'Deployed on a private bank infrastructure — not publicly accessible.',
   },
 
   // ---------------------------
@@ -115,6 +121,7 @@ export const projects: Project[] = [
       'Real-time',
       'Role-based Access',
     ],
+    category: 'EdTech',
     featured: true,
     confidential: true,
     githubDescription: 'EdTech enterprise product — source cannot be shared.',
