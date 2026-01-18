@@ -1,6 +1,7 @@
 export const personal = {
   name: 'Chanchal Kumar Vishvakarma',
-  title: 'Senior Fullstack Engineer | Tech Lead | Cloud & CI/CD Specialist',
+  title:
+    'Senior Fullstack Engineer | Tech Lead | Expanding Cloud Architecture & DevOps',
   valueProposition:
     'Building high-performance frontend architectures and scalable backend systems that deliver exceptional user experiences at scale',
   email: 'chanchalkvishwakarma@gmail.com',
@@ -20,6 +21,6 @@ export const personal = {
     github: 'https://github.com/CK-Vishwakarma',
     linkedin:
       'https://www.linkedin.com/in/chanchal-kumar-vishvakarma-0954991ba/',
-    twitter: '',
+    twitter: 'https://x.com/chanchal_kv',
   },
 };

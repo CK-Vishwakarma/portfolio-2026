@@ -73,9 +73,9 @@ export function Navbar() {
                     alt="Portfolio Logo"
                     width={48}
                     height={48}
-                    className="rounded-full ring-2 ring-gray-200 transition-all duration-300 group-hover:scale-105"
+                    className="rounded-full ring-2 ring-gray-200 transition-all duration-300"
                   />
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 rounded-full bg-linear-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
               </div>
             </Link>
@@ -90,7 +90,7 @@ export function Navbar() {
                   <button
                     key={item.name}
                     onClick={() => scrollToSection(item.href)}
-                    className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 group ${
+                    className={`cursor-pointer relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 group ${
                       isActive
                         ? 'text-blue-600 bg-blue-50'
                         : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
