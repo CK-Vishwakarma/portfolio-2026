@@ -23,4 +23,5 @@ export const personal = {
       'https://www.linkedin.com/in/chanchal-kumar-vishvakarma-0954991ba/',
     twitter: 'https://x.com/chanchal_kv',
   },
+  resumeLink: '/fullstack_Chanchal_Kumar_Resume.pdf',
 };

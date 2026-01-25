@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { personal } from '../data/personal';
 
 const skillCategories = [
   {
@@ -142,7 +143,7 @@ export function Skills() {
               journey, certifications, and project achievements.
             </p>
             <a
-              href="/fullstack_Chanchal_Kumar_Resume.pdf"
+              href={personal.resumeLink}
               download="Chanchal_Kumar_Vishvakarma_Resume.pdf"
               className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >

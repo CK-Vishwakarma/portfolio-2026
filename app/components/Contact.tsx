@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { personal } from '../data/personal';
 import { SocialLinks } from './SocialLinks';
+import { FAQ } from './FAQ';
 
 // Validation schema (matches server-side)
 const contactSchema = z.object({
@@ -508,6 +509,8 @@ export function Contact() {
             </div>
           </div>
         </div>
+
+        <FAQ />
       </div>
     </section>
   );
