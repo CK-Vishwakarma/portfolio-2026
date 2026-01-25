@@ -28,6 +28,7 @@ function checkRateLimit(ip: string): boolean {
 const contactSchema = z.object({
   name: z.string().min(1, 'Name is required').max(100, 'Name is too long'),
   email: z.email('Invalid email address'),
+  service: z.string().min(1, 'Please select a service'),
   message: z
     .string()
     .min(10, 'Message must be at least 10 characters')
@@ -66,7 +67,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const { name, email, message } = validationResult.data;
+    const { name, email, service, message } = validationResult.data;
 
     // Send email
     const { data, error } = await resend.emails.send({
@@ -79,6 +80,7 @@ export async function POST(request: NextRequest) {
           <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Service:</strong> ${service}</p>
             <p><strong>Message:</strong></p>
             <p style="white-space: pre-wrap;">${message}</p>
           </div>

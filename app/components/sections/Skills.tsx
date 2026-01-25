@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { personal } from '../data/personal';
+import { personal } from '../../data/personal';
 
 const skillCategories = [
   {

@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { projects } from '../data/projects';
-import { ProjectCard } from './ProjectCard';
+import { projects } from '../../data/projects';
+import { ProjectCard } from '../ProjectCard';
 
 export function Projects() {
   const [filter, setFilter] = useState<string>('all');

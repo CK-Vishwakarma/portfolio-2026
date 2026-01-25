@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { personal } from '../data/personal';
-import { SocialLinks } from './SocialLinks';
+import { personal } from '../../data/personal';
+import { SocialLinks } from '../ui/SocialLinks';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();

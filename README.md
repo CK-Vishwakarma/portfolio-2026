@@ -6,7 +6,7 @@
 📞 +91-7000143933  
 📧 chanchalkvishvakarma@gmail.com  
 🔗 **LinkedIn:** https://www.linkedin.com/in/chanchal-kumar-vishvakarma-0954991ba/  
-🔗 **Live Portfolio:** https://chanchal-vishvakarma.vercel.app/
+🔗 **Live Portfolio:** https://chanchal-vk-portfolio.vercel.app/
 
 ---
 
@@ -28,6 +28,36 @@ My expertise extends across **AWS cloud**, **CI/CD automation**, **secure archit
 - **Confidential project handling** - Enterprise projects shown with appropriate NDA indicators
 - Auto-deployments via **Vercel CI/CD** (GitHub integration)
 - Lighthouse-optimized performance scoring
+
+---
+
+## 📁 Project Structure
+
+This portfolio follows Next.js App Router best practices with a well-organized component structure:
+
+```
+app/
+├── components/             # Reusable components
+│   ├── sections/          # Page sections (Hero, About, Projects, etc.)
+│   ├── ui/                # Basic UI components (SocialLinks, ScrollToTop)
+│   ├── Navbar.tsx         # Navigation
+│   └── ProjectCard.tsx    # Reusable project card
+├── data/                  # Static data (personal info, projects, FAQ)
+├── lib/                   # Utilities and constants
+├── api/                   # API routes
+└── page.tsx               # Home page
+```
+
+**Key Features:**
+
+- ✅ Clean component separation (sections vs UI components)
+- ✅ TypeScript for type safety
+- ✅ Responsive design with Tailwind CSS
+- ✅ Modern animations and interactions
+- ✅ SEO optimized with proper meta tags
+- ✅ Performance optimized with Next.js
+
+See [`PROJECT_STRUCTURE.md`](./PROJECT_STRUCTURE.md) for detailed documentation.
 
 ---
 

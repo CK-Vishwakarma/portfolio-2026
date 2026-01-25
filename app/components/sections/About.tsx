@@ -1,4 +1,4 @@
-import { personal } from '../data/personal';
+import { personal } from '../../data/personal';
 
 export function About() {
   return (
