@@ -2,7 +2,7 @@ import { personal } from '../../data/personal';
 
 export function About() {
   return (
-    <section id="about" className="relative py-20 px-6 overflow-hidden">
+    <section id="about" className="relative py-20 px-4 min-[376px]:px-6 overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(59,130,246,0.15),transparent_50%)] dark:bg-[radial-gradient(circle_at_20%_30%,rgba(59,130,246,0.05),transparent_50%)]" />

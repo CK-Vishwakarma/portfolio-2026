@@ -1,6 +1,7 @@
 import {
   About,
   Contact,
+  FestiveCelebration,
   Footer,
   Hero,
   Navbar,
@@ -12,6 +13,7 @@ import {
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <FestiveCelebration />
       <Navbar />
       <Hero />
       <About />

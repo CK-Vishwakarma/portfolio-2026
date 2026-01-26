@@ -33,7 +33,7 @@ export function Footer() {
 
       <div className="relative z-10">
         {/* Main Footer Content */}
-        <div className="max-w-screen-xl mx-auto px-6 py-16">
+        <div className="max-w-screen-xl mx-auto px-4 min-[376px]:px-6 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {/* Brand Section */}
             <div className="lg:col-span-1">
@@ -205,7 +205,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800">
-          <div className="max-w-screen-xl mx-auto px-6 py-8">
+          <div className="max-w-screen-xl mx-auto px-4 min-[376px]:px-6 py-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="flex items-center space-x-4 text-sm text-gray-400">
                 <span>

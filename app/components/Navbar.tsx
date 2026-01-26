@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { FestiveBanner, getActiveTheme } from './ui/FestiveBanner';
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -55,6 +56,8 @@ export function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-lg shadow-lg border-b border-gray-200/50' : 'bg-white/80 backdrop-blur-md'}`}
     >
+      {/* Festive Banner - Change theme in FestiveBanner.tsx */}
+      <FestiveBanner theme={getActiveTheme()} height='h-2' />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 relative">
           {/* Logo - positioned absolutely on the left */}
@@ -90,17 +93,15 @@ export function Navbar() {
                   <button
                     key={item.name}
                     onClick={() => scrollToSection(item.href)}
-                    className={`cursor-pointer relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 group ${
-                      isActive
-                        ? 'text-blue-600 bg-blue-50'
-                        : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                    }`}
+                    className={`cursor-pointer relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 group ${isActive
+                      ? 'text-blue-600 bg-blue-50'
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                      }`}
                   >
                     {item.name}
                     <span
-                      className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 ${
-                        isActive ? 'w-full' : 'w-0 group-hover:w-full'
-                      }`}
+                      className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                        }`}
                     ></span>
                   </button>
                 );
@@ -119,19 +120,16 @@ export function Navbar() {
               <span className="sr-only">Open main menu</span>
               <div className="w-6 h-6 relative">
                 <span
-                  className={`absolute block h-0.5 w-6 bg-current transform transition-all duration-300 ${
-                    isOpen ? 'rotate-45 top-3' : 'top-1'
-                  }`}
+                  className={`absolute block h-0.5 w-6 bg-current transform transition-all duration-300 ${isOpen ? 'rotate-45 top-3' : 'top-1'
+                    }`}
                 ></span>
                 <span
-                  className={`absolute block h-0.5 w-6 bg-current transform transition-all duration-300 top-3 ${
-                    isOpen ? 'opacity-0' : 'opacity-100'
-                  }`}
+                  className={`absolute block h-0.5 w-6 bg-current transform transition-all duration-300 top-3 ${isOpen ? 'opacity-0' : 'opacity-100'
+                    }`}
                 ></span>
                 <span
-                  className={`absolute block h-0.5 w-6 bg-current transform transition-all duration-300 ${
-                    isOpen ? '-rotate-45 top-3' : 'top-5'
-                  }`}
+                  className={`absolute block h-0.5 w-6 bg-current transform transition-all duration-300 ${isOpen ? '-rotate-45 top-3' : 'top-5'
+                    }`}
                 ></span>
               </div>
             </button>

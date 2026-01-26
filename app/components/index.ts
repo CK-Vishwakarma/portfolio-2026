@@ -14,5 +14,8 @@ export { Projects } from './sections/Projects';
 export { Skills } from './sections/Skills';
 
 // UI components
+export { FestiveBanner, festiveThemes, getActiveTheme } from './ui/FestiveBanner';
+export { FestiveCelebration } from './ui/FestiveCelebration';
 export { ScrollToTop } from './ui/ScrollToTop';
 export { SocialLinks } from './ui/SocialLinks';
+export { SvgImage } from './ui/SvgImage';

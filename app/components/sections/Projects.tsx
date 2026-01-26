@@ -19,7 +19,7 @@ export function Projects() {
       : projects.filter(project => project.technologies.includes(filter));
 
   return (
-    <section id="projects" className="relative py-20 px-6 overflow-hidden">
+    <section id="projects" className="relative py-20 px-4 min-[376px]:px-6 overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.15),transparent_50%)] dark:bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.05),transparent_50%)]" />
@@ -48,11 +48,10 @@ export function Projects() {
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           <button
             onClick={() => setFilter('all')}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-              filter === 'all'
-                ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
-                : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
-            }`}
+            className={`cursor-pointer px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${filter === 'all'
+              ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
+              : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
+              }`}
           >
             All Projects
           </button>
@@ -60,11 +59,10 @@ export function Projects() {
             <button
               key={tech}
               onClick={() => setFilter(tech)}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                filter === tech
-                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
-              }`}
+              className={`cursor-pointer px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${filter === tech
+                ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
+                : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
+                }`}
             >
               {tech}
             </button>
