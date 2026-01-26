@@ -14,41 +14,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Chanchal Kumar Vishvakarma - Senior Fullstack Engineer',
+  title: "Chanchal KV | Fullstack Developer (React, Next.js, AI)",
   description:
-    'Senior Fullstack Engineer specializing in React/Next.js and scalable backend systems. 5+ years experience leading teams and delivering financial, healthcare, AI, and edtech solutions at scale.',
-  keywords: [
-    'fullstack engineer',
-    'react',
-    'nextjs',
-    'nodejs',
-    'aws',
-    'cloud',
-    'ci/cd',
-    'team lead',
-    'software development',
-    'portfolio',
-    'chanchal kumar vishvakarma',
-    'senior software engineer',
-    'frontend architecture',
-    'backend systems',
-    'healthcare software',
-    'financial software',
-    'edtech solutions',
-    'ai applications',
-    'performance optimization',
-    'agile methodologies',
-    'cloud deployments',
-    'azure',
-  ],
-  authors: [{ name: 'Chanchal Kumar Vishvakarma' }],
+    "Chanchal Vishvakarma is a Senior Fullstack Developer building fast, secure web and mobile applications with AI integrations using React, Next.js, and NestJS.",
+
+  authors: [{ name: "Chanchal Vishvakarma", url: "https://chanchalkv.com" }],
+
   openGraph: {
-    title: 'Chanchal Kumar Vishvakarma - Senior Fullstack Engineer',
+    title: "Chanchal KV | Fullstack Developer",
     description:
-      'Building high-performance frontend architectures and scalable backend systems that deliver exceptional user experiences at scale.',
-    type: 'website',
+      "Senior Fullstack Developer building high-performance web and mobile apps with AI features using React, Next.js, and NestJS.",
+    url: "https://chanchalkv.com",
+    siteName: "Chanchal KV",
+    images: [
+      {
+        url: "https://chanchalkv.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Chanchal KV - Fullstack Developer",
+      },
+    ],
+    type: "website",
+  },
+
+  alternates: {
+    canonical: "https://chanchalkv.com",
   },
 };
+
 
 export default function RootLayout({
   children,
