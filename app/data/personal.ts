@@ -4,7 +4,7 @@ export const personal = {
     'Senior Fullstack Engineer | Tech Lead | Expanding Cloud Architecture & DevOps',
   valueProposition:
     'Building high-performance frontend architectures and scalable backend systems that deliver exceptional user experiences at scale',
-  email: 'chanchalkvishwakarma@gmail.com',
+  email: 'contact@chanchalkv.com',
   phone: '+91-7000143933',
   location: 'Mumbai, India',
   bio: 'Senior Fullstack Engineer (5.2 YOE) specializing in high-performance frontend architecture (React/Next.js) and scalable backend systems (Node/Nest). Proven experience leading teams, owning system design, and delivering financial, healthcare, AI, and edtech products at scale. Expert in AWS cloud, CI/CD automation, and secure system design. Passionate about performance optimization, agile methodologies, and cloud deployments.',

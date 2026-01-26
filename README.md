@@ -4,7 +4,7 @@
 
 📍 Mumbai, India  
 📞 +91-7000143933  
-📧 chanchalkvishvakarma@gmail.com  
+📧 contact@chanchalkv.com  
 🔗 **LinkedIn:** https://www.linkedin.com/in/chanchal-kumar-vishvakarma-0954991ba/  
 🔗 **Live Portfolio:** https://chanchal-vk-portfolio.vercel.app/
 
